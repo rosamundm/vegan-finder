@@ -1,26 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import { Place } from "./types";
+import { places } from "./data";
 
-function App() {
+const App: React.FC = () => {
+
   return (
-    <div className="App">
+    <>
+    <GlobalStyle />
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+
+      <div className="container">
+
+        <div>
+          {places.map((place: Place, i: number) => (
+
+            <div key={i}>
+              <h2>
+                <a href={place.website}>
+                  {place.name}
+                </a>
+              </h2>
+         
+            </div>
+          
+          ))}
+        </div>
+
+      </div>
+
+    </>
   );
-}
+};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+  };
+
+  .container {
+    max-width: 500px;
+  }
+
+  h2 {
+    font-size: 40
+  };
+
+  p {
+    font-size: 20
+  };
+`
 
 export default App;

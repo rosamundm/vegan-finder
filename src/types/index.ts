@@ -23,8 +23,8 @@ export enum District {
 }
 
 export enum PlaceType {
-    restaurant = "restaurant",
-    cafe = "cafe"
+    restaurant = "Restaurant",
+    cafe = "Café"
 }
 
 export type Place = {

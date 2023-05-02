@@ -1,7 +1,9 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import { Place } from "./types";
-import { places } from "./data";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import CheckboxGrid from "./components/CheckboxGrid";
+import GetResultButton from "./components/GetResultButton";
 
 const App: React.FC = () => {
 
@@ -15,21 +17,15 @@ const App: React.FC = () => {
       <div className="container">
 
         <div>
-          {places.map((place: Place, i: number) => (
+          <CheckboxGrid />
+        </div>
 
-            <div key={i}>
-              <h2>
-                <a href={place.website}>
-                  {place.name}
-                </a>
-              </h2>
-         
-            </div>
-          
-          ))}
+        <div>
+          <GetResultButton />
         </div>
 
       </div>
+  
 
     </>
   );
@@ -37,13 +33,16 @@ const App: React.FC = () => {
 
 const GlobalStyle = createGlobalStyle`
   body {
+    background-color: #BBE7C5;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     display: flex;
+    font-family: roboto;
   };
 
   .container {
+    min-height: 150;
     max-width: 500px;
   }
 

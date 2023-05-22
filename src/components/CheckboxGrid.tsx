@@ -21,18 +21,27 @@ const CheckboxGrid: React.FC = () => {
 
           <Grid item xs={2} sm={4} md={4}>
             <GridElement>
+            <span className="checkbox-header">
+              <b>Type</b>
+            </span>
                 <PlaceTypeCheckboxes />
             </GridElement>
           </Grid>
 
           <Grid item xs={2} sm={4} md={4}>
             <GridElement>
+            <span className="checkbox-header">
+              <b>District</b>
+            </span>
                 <DistrictCheckboxes />
             </GridElement>
           </Grid>
 
           <Grid item xs={2} sm={4} md={4}>
             <GridElement>
+            <span className="checkbox-header">
+              <b>Cuisine</b>
+            </span>
                 <CuisineCheckboxes />
             </GridElement>
           </Grid>

@@ -4,6 +4,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import CheckboxGrid from "./components/CheckboxGrid";
 import GetResultButton from "./components/GetResultButton";
+import TitleHeader from "./components/TitleHeader";
 
 const App: React.FC = () => {
 
@@ -16,11 +17,15 @@ const App: React.FC = () => {
 
       <div className="container">
 
+        <div className="title-header">
+          <TitleHeader />
+        </div>
+
         <div>
           <CheckboxGrid />
         </div>
 
-        <div>
+        <div className="get-result-button">
           <GetResultButton />
         </div>
 

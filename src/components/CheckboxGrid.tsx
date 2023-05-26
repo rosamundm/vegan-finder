@@ -2,8 +2,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from '@mui/material/styles';
-import CuisineCheckboxes from './CuisineCheckboxes';
-import DistrictCheckboxes from './DistrictCheckboxes';
+import CuisineDropDown from './CuisineDropDown';
+import DistrictDropDown from './DistrictDropDown';
 import PlaceTypeDropDown from "./PlaceTypeDropDown";
 
 const GridElement = styled(Paper)(({ theme }) => ({
@@ -27,13 +27,13 @@ const CheckboxGrid: React.FC = () => {
 
           <Grid item xs={2} sm={4} md={4}>
             <GridElement>
-                <DistrictCheckboxes />
+                <DistrictDropDown />
             </GridElement>
           </Grid>
 
           <Grid item xs={2} sm={4} md={4}>
             <GridElement>
-                <CuisineCheckboxes />
+                <CuisineDropDown />
             </GridElement>
           </Grid>
 

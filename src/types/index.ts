@@ -1,3 +1,5 @@
+export type DeferTypeInference<T> = [T][T extends any ? 0 : never];
+
 export type Props = {
     isOpen: boolean
     toggle: () => void

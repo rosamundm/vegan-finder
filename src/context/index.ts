@@ -1,4 +1,5 @@
 import { createContext } from "react";
+import { Place } from "../types";
 
 export const PlaceTypeContext = createContext({
     chosenPlaceType: "",
@@ -13,4 +14,9 @@ export const DistrictContext = createContext({
 export const CuisineContext = createContext({
     chosenCuisine: "",
     setChosenCuisine: (chosenCuisine: string) => {} 
+})
+
+export const ResultContext = createContext({
+    dropdownResults: [],
+    setDropdownResults: (dropdownResults: Array<Place>) => {}
 })

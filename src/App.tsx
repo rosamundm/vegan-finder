@@ -13,7 +13,7 @@ import { PlaceTypeDropdown, DistrictDropdown, CuisineDropdown } from "./componen
 import GetResultButton from "./components/ResultButton";
 import TitleHeader from "./components/TitleHeader";
 
-import ResultCalculation from "./components/ResultCalculation";
+import ResultCalculation from "./components/Results";
 
 import { PlaceTypeContext, DistrictContext, CuisineContext } from "./context";
 

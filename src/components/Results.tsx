@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
+import Button from "@mui/material/Button";
 import { places } from "../data";
 import { PlaceTypeContext, DistrictContext, CuisineContext } from "../context";
 import { Place } from "../types";
 
-const ResultCalculation: React.FC = () => {
+export const ResultCalculation: React.FC = () => {
 
     const { chosenPlaceType } = useContext(PlaceTypeContext)
     const { chosenDistrict } = useContext(DistrictContext)
@@ -67,4 +68,15 @@ const ResultCalculation: React.FC = () => {
 
 };
 
-export default ResultCalculation;
+export const ResultButton: React.FC = () => {
+
+    return (
+        <Button 
+        variant="contained"
+        // onClick={}
+        >
+            Get result!
+        </Button>
+    );
+
+};

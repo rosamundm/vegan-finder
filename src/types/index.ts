@@ -1,17 +1,17 @@
 export type DeferTypeInference<T> = [T][T extends any ? 0 : never];
 
-export type Props = {
-    isOpen: boolean
-    toggle: () => void
-}
+// export interface ModalProps = {
+//     isOpen: boolean
+//     toggle: () => void
+// }
 
 export enum Cuisine {
-    arab = "Arab",
-    chinese = "Chinese",
-    indian = "Indian",
-    italian = "Italian",
-    usa = "USA",
-    vietnamese = "Vietnamese"
+    arab = "Arab 🥙",
+    chinese = "Chinese 🥟",
+    indian = "Indian 🍛",
+    italian = "Italian 🍕",
+    usa = "USA 🍔",
+    vietnamese = "Vietnamese 🍜"
 }
 
 export enum District {
@@ -25,8 +25,8 @@ export enum District {
 }
 
 export enum PlaceType {
-    restaurant = "Restaurant",
-    cafe = "Café"
+    restaurant = "Restaurant🍴",
+    cafe = "Café 🧁"
 }
 
 export type Place = {

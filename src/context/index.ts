@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { Place } from "../types";
 
+// TODO: bundle into DropdownContext
+
 export const PlaceTypeContext = createContext({
     chosenPlaceType: "",
     setChosenPlaceType: (chosenPlaceType: string) => {} 
@@ -14,9 +16,4 @@ export const DistrictContext = createContext({
 export const CuisineContext = createContext({
     chosenCuisine: "",
     setChosenCuisine: (chosenCuisine: string) => {} 
-})
-
-export const ResultContext = createContext({
-    dropdownResults: [],
-    setDropdownResults: (dropdownResults: Array<Place>) => {}
 })

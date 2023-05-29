@@ -1,6 +1,7 @@
 import { Cuisine, District, PlaceType } from "./types"
 
 export const cuisines = [
+    Cuisine.general,
     Cuisine.arab,
     Cuisine.chinese,
     Cuisine.indian,

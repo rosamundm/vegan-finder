@@ -12,13 +12,22 @@ code {
     monospace;
 }
 
-.get-result-button {
+.dropdown-container {
   justify-content: center;
-  width: 500px;
+  width: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
-  padding-left: 40%;
-  padding-right: 40%;
+}
+
+.result-box {
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .title-header {

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Button from "@mui/material/Button";
 import { places } from "../data";
 import { PlaceTypeContext, DistrictContext, CuisineContext } from "../context";
 import { Place } from "../types";
@@ -10,73 +9,100 @@ export const ResultCalculation: React.FC = () => {
     const { chosenDistrict } = useContext(DistrictContext)
     const { chosenCuisine } = useContext(CuisineContext)
 
-    const baseResults = places
-    .filter((place) => {
-        return place.category.includes(chosenPlaceType)
-    })
-    .filter((place) => {
-        return place.district.includes(chosenDistrict)
-    })
-
-    // for now, an additional filter due to error with optional Place.cuisine property
     const results = places
     .filter((place) => {
         return place.category.includes(chosenPlaceType)
     })
     .filter((place) => {
         return place.district.includes(chosenDistrict)
-    }).filter((place) => {
-        return place.cuisine?.includes(chosenCuisine)
+    })
+    .filter((place) => {
+        return place.cuisine.includes(chosenCuisine)
     })
 
     console.log(results)
 
-    if (baseResults.length === 0 && results.length === 0) {
+    if (results.length === 0) {
 
         return (
-            <div>
-                We don't currently have anything that matches your criteria. Try 
-                setting one of the boxes to "No Preference" to broaden your search!
+
+            <div className="results-box">
+        
+                <div>
+                    We don't currently have anything that matches your criteria. Try 
+                    setting one of the boxes to "No Preference" to broaden your search!
+                </div>
+
             </div>
         )
     
     } else {
 
     return (
-        <div>
-            {!chosenCuisine ? (
-                <ul>
-                    {baseResults.map((result: Place) => (
-                        <li>
-                            {result.name}
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-            <ul>
+
+        <div className="result-box">
+
+            <h2>We found these tasty results for you!</h2>
+
+        
                 {results.map((result: Place) => (
-                    <li>
-                        {result.name}
-                    </li>
+
+                    <div className="place-details">
+
+                        {result.website ?
+                            <h4>
+                                <a href={result.website}>
+                                    {result.name}
+                                </a>
+                            </h4> 
+                            : <h4>{result.name}</h4> 
+                        }
+
+                        {result.notes ?
+                            <span>{result.notes}</span> 
+                            : null
+                        }
+                        
+                        <ul>
+                     
+                            <li>
+                                {result.fully_vegan === true ? 
+                                    <span>💚 Fully vegan</span> 
+                                    : <span>💔 Not fully vegan</span>
+                                }
+                            </li> 
+
+                            <li>
+                                {result.toilet === true ? 
+                                    <span>🧻 Toilet available</span> 
+                                    : <span>💩 No toilet available</span>
+                                }
+                            </li>  
+
+                            <li>
+                                {result.open_sundays === true ? 
+                                    <span>✅ Open on Sundays</span> 
+                                    : <span>❌ Closed on Sundays</span>
+                                }
+                            </li>     
+
+                            <li>
+                                {result.open_mondays === true ? 
+                                    <span>✅ Open on Mondays</span> 
+                                    : <span>❌ Closed on Mondays</span>
+                                }
+                            </li>       
+
+                        </ul>
+                    </div>
                 ))}
-            </ul>
-            )}
+     
+
         </div>
+   
     )
 
 }
 
-};
-
-export const ResultButton: React.FC = () => {
-
-    return (
-        <Button 
-        variant="contained"
-        // onClick={}
-        >
-            Get result!
-        </Button>
-    );
 
 };

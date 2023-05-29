@@ -3,18 +3,11 @@ import { Box } from "@mui/material";
 import { Grid } from "@mui/material";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-
 import GlobalStyle from "./components/GlobalStyle";
 import GridElement from "./components/GridElement";
-
-
-import { PlaceTypeDropdown, DistrictDropdown, CuisineDropdown } from "./components/Dropdowns";
-
-import GetResultButton from "./components/ResultButton";
 import TitleHeader from "./components/TitleHeader";
-
-import ResultCalculation from "./components/Results";
-
+import { PlaceTypeDropdown, DistrictDropdown, CuisineDropdown } from "./components/Dropdowns";
+import { ResultCalculation } from "./components/Results";
 import { PlaceTypeContext, DistrictContext, CuisineContext } from "./context";
 
 
@@ -24,17 +17,12 @@ const App: React.FC = () => {
   const [chosenDistrict, setChosenDistrict] = useState<string>("");
   const [chosenCuisine, setChosenCuisine] = useState<string>("");
 
-  console.log(chosenPlaceType)
-  console.log(chosenDistrict)
-  console.log(chosenCuisine)
-
   return (
     <>
 
     <PlaceTypeContext.Provider value={{ chosenPlaceType, setChosenPlaceType }}>
     <DistrictContext.Provider value={{ chosenDistrict, setChosenDistrict }}>
     <CuisineContext.Provider value={{ chosenCuisine, setChosenCuisine }}>
-
 
     <GlobalStyle />
 
@@ -46,6 +34,8 @@ const App: React.FC = () => {
         <div className="title-header">
           <TitleHeader />
         </div>
+
+        <div className="dropdown-container">
 
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
@@ -71,13 +61,13 @@ const App: React.FC = () => {
           </Grid>
         </Box>
 
-        <div className="get-result-button">
-          <GetResultButton />
         </div>
 
         <div>
           <ResultCalculation />
         </div>
+
+        
 
       </div>
 

@@ -4,6 +4,7 @@ export enum Cuisine {
     chinese = "Chinese 🥟",
     indian = "Indian 🍛",
     italian = "Italian 🍕",
+    japanese = "Japanese 🍱",
     usa = "USA 🍔",
     vietnamese = "Vietnamese 🍜",
 }
@@ -14,6 +15,7 @@ export enum District {
     mitte = "Mitte",
     moabit = "Moabit",
     neukoelln = "Neukölln",
+    prenzlauerBerg = "Prenzlauer Berg",
     schoeneberg = "Schöneberg",
     wedding = "Wedding"
 }

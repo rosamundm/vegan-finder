@@ -6,6 +6,7 @@ export const cuisines = [
     Cuisine.chinese,
     Cuisine.indian,
     Cuisine.italian,
+    Cuisine.japanese,
     Cuisine.usa,
     Cuisine.vietnamese
 ];
@@ -16,6 +17,7 @@ export const districts = [
     District.mitte,
     District.moabit,
     District.neukoelln,
+    District.prenzlauerBerg,
     District.schoeneberg,
     District.wedding
 ];

@@ -89,6 +89,47 @@ export const places = [
         website: "https://www.no-milk-today-berlin.de/",
         address: "Fichtestraße 3, 10967 Berlin"
     },
+    {
+        name: "Shisomen Vegan Ramen & Cocktail",
+        category: PlaceType.restaurant,
+        district: District.mitte,
+        cuisine: Cuisine.japanese,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        website: null,
+        address: "Gertrud-Kolmar-Straße 4, 10117 Berlin"
+    },
+    {
+        name: "Mantra",
+        category: PlaceType.restaurant,
+        district: District.schoeneberg,
+        cuisine: Cuisine.indian,
+        fully_vegan: false,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Vegetarian Indian restaurant with plenty of great vegan options that don't make you feel \
+        like you have to \'settle\'",
+        website: null,
+        address: "Dürerplatz 2, 12157 Berlin"
+    },
+    {
+        name: "Froindlichst",
+        category: PlaceType.restaurant,
+        district: District.prenzlauerBerg,
+        cuisine: Cuisine.usa,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Cosy feel-good vegan burgers and more decadent fast food",
+        website: "https://www.froindlichst.com/berlin/",
+        address: "Immanuelkirchstraße 31, 10405 Berlin"
+    },
+
+
 
 
 ]

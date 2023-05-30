@@ -20,13 +20,24 @@ export const ResultCalculation: React.FC = () => {
         return place.cuisine.includes(chosenCuisine)
     })
 
-    console.log(results)
+    if (!chosenPlaceType && !chosenDistrict && !chosenCuisine) {
+
+        return (
+
+            <div className="result-box">
+                <div>
+                    Welcome! Please start choosing from the dropdowns 🤗
+                </div>
+            </div>
+            
+        )
+    }
 
     if (results.length === 0) {
 
         return (
 
-            <div className="results-box">
+            <div className="result-box">
         
                 <div>
                     We don't currently have anything that matches your criteria. Try 
@@ -43,27 +54,33 @@ export const ResultCalculation: React.FC = () => {
         <div className="result-box">
 
             <h2>We found these tasty results for you!</h2>
-
         
                 {results.map((result: Place) => (
 
                     <div className="place-details">
 
                         {result.website ?
-                            <h4>
+                            <h3>
                                 <a href={result.website}>
                                     {result.name}
                                 </a>
-                            </h4> 
-                            : <h4>{result.name}</h4> 
+                            </h3> 
+                            : <h3>{result.name}</h3> 
                         }
-
+                        
                         {result.notes ?
                             <span>{result.notes}</span> 
                             : null
                         }
                         
                         <ul>
+                            
+                            <li>
+                                <span>
+                                    📍{result.address}
+                                </span>
+                            </li>  
+
                      
                             <li>
                                 {result.fully_vegan === true ? 
@@ -91,7 +108,7 @@ export const ResultCalculation: React.FC = () => {
                                     <span>✅ Open on Mondays</span> 
                                     : <span>❌ Closed on Mondays</span>
                                 }
-                            </li>       
+                            </li>        
 
                         </ul>
                     </div>

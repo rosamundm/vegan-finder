@@ -40,6 +40,7 @@ export type Place = {
     open_sundays: boolean,
     toilet: boolean,
     notes?: string,
-    website?: string
+    website?: string,
+    address: string
 }
 

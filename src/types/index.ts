@@ -1,10 +1,3 @@
-export type DeferTypeInference<T> = [T][T extends any ? 0 : never];
-
-// export interface ModalProps = {
-//     isOpen: boolean
-//     toggle: () => void
-// }
-
 export enum Cuisine {
     general = "General 🤷",
     arab = "Arab 🥙",

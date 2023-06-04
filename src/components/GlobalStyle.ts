@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #6FD94D;
     justify-content: center;
     align-items: center;
     min-height: 100vh;

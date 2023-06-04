@@ -70,7 +70,7 @@ export const ResultCalculation: React.FC = () => {
                         
                         {result.notes ?
                             <span>{result.notes}</span> 
-                            : null
+                            : <span></span>
                         }
                         
                         <ul>

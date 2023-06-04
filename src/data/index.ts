@@ -98,7 +98,7 @@ export const places = [
         open_mondays: true,
         open_sundays: true,
         toilet: true,
-        website: null,
+        website: "",
         address: "Gertrud-Kolmar-Straße 4, 10117 Berlin"
     },
     {
@@ -112,7 +112,7 @@ export const places = [
         toilet: true,
         notes: "Vegetarian Indian restaurant with plenty of great vegan options that don't make you feel \
         like you have to \'settle\'",
-        website: null,
+        website: "",
         address: "Dürerplatz 2, 12157 Berlin"
     },
     {

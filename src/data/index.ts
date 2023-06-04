@@ -10,8 +10,7 @@ export const places = [
         open_mondays: true,
         open_sundays: false,
         toilet: true,
-        notes: "It gets pretty full, even after their 2022 expansion, so go at non-peak times \
-        or get something to take away and enjoy in the nearby Monbijoupark",
+        notes: "It gets pretty full, even after their 2022 expansion, so go at non-peak times or get something to take away and enjoy in the nearby Monbijoupark",
         website: "https://www.instagram.com/cafeneundrei/",
         address: "Monbijouplatz 2, 10178 Berlin"
     },
@@ -110,8 +109,7 @@ export const places = [
         open_mondays: true,
         open_sundays: true,
         toilet: true,
-        notes: "Vegetarian Indian restaurant with plenty of great vegan options that don't make you feel \
-        like you have to \'settle\'",
+        notes: "Vegetarian Indian restaurant with plenty of great vegan options that don't make you feel like you have to settle",
         website: "",
         address: "Dürerplatz 2, 12157 Berlin"
     },

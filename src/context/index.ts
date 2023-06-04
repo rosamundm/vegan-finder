@@ -1,5 +1,4 @@
 import { createContext } from "react";
-import { Place } from "../types";
 
 // TODO: bundle into DropdownContext
 

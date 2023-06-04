@@ -9,7 +9,6 @@ import TitleHeader from "./components/TitleHeader";
 import { PlaceTypeContext, DistrictContext, CuisineContext } from "./context";
 import { PlaceTypeDropdown, DistrictDropdown, CuisineDropdown } from "./components/Dropdowns";
 import { ResultCalculation } from "./components/Results";
-import { AboutModal, TermsModal } from "./components/Modals";
 
 const App: React.FC = () => {
 
@@ -67,8 +66,6 @@ const App: React.FC = () => {
           <ResultCalculation />
         </div>
 
-        <AboutModal />
-        
       </div>
 
       </CuisineContext.Provider>

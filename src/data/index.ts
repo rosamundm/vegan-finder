@@ -126,10 +126,83 @@ export const places = [
         website: "https://www.froindlichst.com/berlin/",
         address: "Immanuelkirchstraße 31, 10405 Berlin"
     },
-
-
-
-
+    {
+        name: "Sakura",
+        category: PlaceType.cafe,
+        district: District.mitte,
+        cuisine: Cuisine.japanese,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Pink, pretty, and calming space to enjoy Japanese-inspired baked goods",
+        website: "https://www.sakura.berlin/",
+        address: "Tieckstraße 8, 10115 Berlin"
+    },
+    {
+        name: "Sotto",
+        category: PlaceType.restaurant,
+        district: District.wedding,
+        cuisine: Cuisine.italian,
+        fully_vegan: false,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Vegetarian & vegan pizza place with a great vibe",
+        website: "https://www.instagram.com/restaurantsotto/?hl=en",
+        address: "Neue Hochstraße 25, 13347 Berlin"
+    },
+    {
+        name: "The Butterfly Lovers",
+        category: PlaceType.restaurant,
+        district: District.mitte,
+        cuisine: Cuisine.chinese,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "May not be the most budget-friendly option, but it's gorgeous",
+        website: "https://the-butterfly-lovers.eatbu.com/",
+        address: "Veteranenstraße 10, 10119 Berlin"
+    },
+    {
+        name: "La Stella Nera",
+        category: PlaceType.restaurant,
+        district: District.neukoelln,
+        cuisine: Cuisine.italian,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Go there for the calzone",
+        website: "https://www.instagram.com/lastellaneraberlin/",
+        address: "Leykestraße 18, 12053 Berlin"
+    },
+    {
+        name: "Velicious",
+        category: PlaceType.cafe,
+        district: District.friedrichshain,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: false,
+        notes: "It's a guinea pig-themed café with amazing cakes that people often order for weddings! Check the latest opening hours before you go",
+        website: "https://www.velicious-cafe.de/",
+        address: "Lenbachstraße 13B, 10245 Berlin"
+    },
+    {
+        name: "Humbaba Falafel",
+        category: PlaceType.restaurant,
+        district: District.moabit,
+        cuisine: Cuisine.arab,
+        fully_vegan: false,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: false,
+        notes: "Great range of all-vegan sauces for your falafel or makali, including sesame and mango",
+        website: "https://www.facebook.com/falafel.humbaba",
+        address: "Turmstraße 85, 10551 Berlin"
+    },
 ]
-
 

@@ -1,5 +1,4 @@
 export enum Cuisine {
-    general = "General 🤷",
     arab = "Arab 🥙",
     chinese = "Chinese 🥟",
     indian = "Indian 🍛",
@@ -7,6 +6,7 @@ export enum Cuisine {
     japanese = "Japanese 🍱",
     usa = "USA 🍔",
     vietnamese = "Vietnamese 🍜",
+    general = "General/Other 🤷",
 }
 
 export enum District {

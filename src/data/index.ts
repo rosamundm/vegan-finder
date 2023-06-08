@@ -204,5 +204,31 @@ export const places = [
         website: "https://www.facebook.com/falafel.humbaba",
         address: "Turmstraße 85, 10551 Berlin"
     },
+    {
+        name: "Alaska",
+        category: PlaceType.cafe,
+        district: District.neukoelln,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: " All-vegan tapas bar with a queer vibe in a living-room setting. Good selection of mocktails (alcohol too, of course). Highly recommend the patatas bravas",
+        website: "https://www.instagram.com/alaska_berlin/",
+        address: "Reuterstraße 85, 12053 Berlin"
+    },
+    {
+        name: "Radikalecker",
+        category: PlaceType.cafe,
+        district: District.neukoelln,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Vegan workers' co-op (attached to a small organic supermarket) with tasty cakes and breakfast food",
+        website: "http://www.radikalecker.org",
+        address: "Weserstraße 212, 12047 Berlin"
+    },
 ]
 

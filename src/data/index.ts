@@ -230,5 +230,44 @@ export const places = [
         website: "http://www.radikalecker.org",
         address: "Weserstraße 212, 12047 Berlin"
     },
+    {
+        name: "Cinnamood",
+        category: PlaceType.cafe,
+        district: District.mitte,
+        cuisine: Cuisine.general,
+        fully_vegan: false,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: false,
+        notes: "Cute pastel-lilac shop selling a variety of cinnamon rolls and also some stationery. Note that there is nowhere to sit — takeaway only",
+        website: "https://cinnamood.de/",
+        address: "Oranienburger Straße 8, 10178 Berlin"
+    },
+    {
+        name: "Savory Chay",
+        category: PlaceType.restaurant,
+        district: District.mitte,
+        cuisine: Cuisine.vietnamese,
+        fully_vegan: false,
+        open_mondays: true,
+        open_sundays: false,
+        toilet: true,
+        notes: "Unpretentious vegetarian (but mostly vegan) restaurant off Friedrichstraße. Note that it's closed on weekends",
+        website: "http://savorychay.de/",
+        address: "Kronenstraße 70, 10117 Berlin"
+    },
+    {
+        name: "Caphe HOA",
+        category: PlaceType.restaurant,
+        district: District.mitte,
+        cuisine: Cuisine.vietnamese,
+        fully_vegan: false,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Technically in Mitte, but if you're near Moritzplatz, this is a nice lunch spot in a hidden spot",
+        website: "https://www.caphe-hoa.com/hoa1-startseite",
+        address: "Stallschreiberstraße 15, 10179 Berlin"
+    }
 ]
 

@@ -77,18 +77,6 @@ export const places = [
         address: "Rosenthaler Str. 3, 10119 Berlin"
     },
     {
-        name: "No Milk Today",
-        category: PlaceType.cafe,
-        district: District.kreuzberg,
-        cuisine: Cuisine.general,
-        fully_vegan: true,
-        open_mondays: false,
-        open_sundays: true,
-        toilet: true,
-        website: "https://www.no-milk-today-berlin.de/",
-        address: "Fichtestraße 3, 10967 Berlin"
-    },
-    {
         name: "Shisomen Vegan Ramen & Cocktail",
         category: PlaceType.restaurant,
         district: District.mitte,

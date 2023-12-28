@@ -2,6 +2,19 @@ import { Cuisine, District, PlaceType } from "../types";
 
 export const places = [
     {
+	name: "Vegan Vibes",
+	category: PlaceType.cafe,
+	district: District.friedrichshain,
+	cuisine: Cuisine.general,
+	fully_vegan: true,
+	open_mondays: false,
+	open_sundays: true,
+	toilet: true,
+	notes: "Cute and cosy oasis, a short walk from the chaos of Boxhagener Platz",
+	website: "https://www.veganvibes.berlin/",
+	address: "Niederbarnimstraße 16, 10247 Berlin" 
+    },
+    {
         name: "Cafe 93",
         category: PlaceType.cafe,
         district: District.mitte,

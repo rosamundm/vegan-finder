@@ -45,7 +45,7 @@ export const places = [
         category: PlaceType.cafe,
         district: District.mitte,
         cuisine: Cuisine.general,
-        fully_vegan: false,
+        fully_vegan: true,
         open_mondays: true,
         open_sundays: true,
         toilet: true,

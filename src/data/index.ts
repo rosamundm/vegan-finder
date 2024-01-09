@@ -48,7 +48,7 @@ export const places = [
         fully_vegan: false,
         open_mondays: true,
         open_sundays: true,
-        toilet: false,
+        toilet: true,
         notes: "The vegan donuts stand up pretty well against a certain other local franchise",
         website: "https://sammysberlinerdonuts.de/",
         address: "Sophienstraße 30-31, 10178 Berlin"
@@ -269,6 +269,19 @@ export const places = [
         notes: "Technically in Mitte, but if you're near Moritzplatz, this is a nice lunch spot in a hidden spot",
         website: "https://www.caphe-hoa.com/hoa1-startseite",
         address: "Stallschreiberstraße 15, 10179 Berlin"
+    },
+    {
+        name: "Dat Cookie",
+        category: PlaceType.cafe,
+        district: District.mitte,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: false,
+        notes: "New spot tucked inside the unique labyrinth of the Hackesche Höfe, with inventive cookie flavours changing every month",
+        website: "https://www.dat-cookie.com/",
+        address: "Rosenthaler Str. 36, 10178 Berlin"
     }
 ]
 

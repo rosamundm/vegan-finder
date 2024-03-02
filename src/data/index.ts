@@ -282,6 +282,19 @@ export const places = [
         notes: "New spot tucked inside the unique labyrinth of the Hackesche Höfe, with inventive cookie flavours changing every month",
         website: "https://www.dat-cookie.com/",
         address: "Rosenthaler Str. 36, 10178 Berlin"
+    },
+    {
+        name: "C+ Bakery",
+        category: PlaceType.cafe,
+        district: District.kreuzberg,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Cinnamon buns and other sweet treats, as well as savoury snacks like foccacia. It is Black, queer, and feminist-owned, hosting regular events for the community",
+        website: "https://linktr.ee/cplusveganbakery",
+        address: "Falckensteinstraße 35, 10997 Berlin"
     }
 ]
 

@@ -295,6 +295,32 @@ export const places = [
         notes: "Cinnamon buns and other sweet treats, as well as savoury snacks like foccacia. It is Black, queer, and feminist-owned, hosting regular events for the community",
         website: "https://linktr.ee/cplusveganbakery",
         address: "Falckensteinstraße 35, 10997 Berlin"
+    },
+    {
+        name: "Al Catzone",
+        category: PlaceType.restaurant,
+        district: District.kreuzberg,
+        cuisine: Cuisine.italian,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: false,
+        toilet: true,
+        notes: "A very laid-back place tucked away off Mehringplatz, serving pizzas with puffy Neapolitan crusts",
+        website: "https://www.alcatzone.com/",
+        address: "Brandesstraße 7, 10969 Berlin"
+    },
+    {
+        name: "Dervish",
+        category: PlaceType.restaurant,
+        district: District.friedrichshain,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Central Asian cuisine (with a focus on Uzbek): manti, flatbread, and other flavourful foods made with whole ingredients",
+        website: "https://dervish.eu/",
+        address: "Krossener Str. 16, 10245 Berlin"
     }
 ]
 

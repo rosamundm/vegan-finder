@@ -102,19 +102,6 @@ export const places = [
         address: "Gertrud-Kolmar-Straße 4, 10117 Berlin"
     },
     {
-        name: "Mantra",
-        category: PlaceType.restaurant,
-        district: District.schoeneberg,
-        cuisine: Cuisine.indian,
-        fully_vegan: false,
-        open_mondays: true,
-        open_sundays: true,
-        toilet: true,
-        notes: "Vegetarian Indian restaurant with plenty of great vegan options that don't make you feel like you have to settle",
-        website: "",
-        address: "Dürerplatz 2, 12157 Berlin"
-    },
-    {
         name: "Froindlichst",
         category: PlaceType.restaurant,
         district: District.prenzlauerBerg,
@@ -321,6 +308,19 @@ export const places = [
         notes: "Central Asian cuisine (with a focus on Uzbek): manti, flatbread, and other flavourful foods made with whole ingredients",
         website: "https://dervish.eu/",
         address: "Krossener Str. 16, 10245 Berlin"
+    },
+    {
+        name: "La Petite Véganerie",
+        category: PlaceType.restaurant,
+        district: District.kreuzberg,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: false,
+        open_sundays: true,
+        toilet: true,
+        notes: "Veganised French cuisine in tapas-style format so you can try a variety of smaller dishes, plus pastries and desserts like crême brûlée",
+        website: "https://la-petite-veganerie.de/",
+        address: "Falckensteinstraße 37, 10997 Berlin"
     }
 ]
 

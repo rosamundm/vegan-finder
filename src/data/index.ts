@@ -28,19 +28,6 @@ export const places = [
         address: "Monbijouplatz 2, 10178 Berlin"
     },
     {
-        name: "Round & Edgy",
-        category: PlaceType.cafe,
-        district: District.mitte,
-        cuisine: Cuisine.usa,
-        fully_vegan: true,
-        open_mondays: true,
-        open_sundays: false,
-        toilet: false,
-        notes: "Rich, yummy, gooey, NYC-style cookies",
-        website: "https://www.instagram.com/roundedgy/",
-        address: "Rochstraße 3, 10178 Berlin"
-    },
-    {
         name: "Sammy's Berliner Donuts",
         category: PlaceType.cafe,
         district: District.mitte,
@@ -54,18 +41,6 @@ export const places = [
         address: "Sophienstraße 30-31, 10178 Berlin"
     },
     {
-        name: "FREA Bakery",
-        category: PlaceType.cafe,
-        district: District.mitte,
-        cuisine: Cuisine.general,
-        fully_vegan: true,
-        open_mondays: true,
-        open_sundays: true,
-        toilet: true,
-        website: "https://freabakery.de/",
-        address: "Gartenstraße 9, 10115 Berlin"
-    },
-    {
         name: "The Sanctuary",
         category: PlaceType.cafe,
         district: District.mitte,
@@ -74,6 +49,7 @@ export const places = [
         open_mondays: false,
         open_sundays: true,
         toilet: false,
+        notes: "Italian-style vegan pastries. Perfect when you wanna get yourself a lil treat",
         website: "https://www.instagram.com/thesanctuaryberlin/",
         address: "Torstraße 175, 10115 Berlin"
     },

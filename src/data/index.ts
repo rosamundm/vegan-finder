@@ -285,5 +285,17 @@ export const places = [
         website: "https://dervish.eu/",
         address: "Krossener Str. 16, 10245 Berlin"
     },
+    {
+        name: "Veganaa",
+        category: PlaceType.restaurant,
+        district: District.schoeneberg,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Small, cosy, family-owned Mongolian restaurant. Lots of dishes to warm the soul. I'm willing to bet this is the only place in Berlin you'll find a vegan suutei tsai (salty milk tea) or Olivier salad",
+        website: "https://www.instagram.com/vegan_aa/",
+        address: "Grunewaldstraße 88, 10823 Berlin"
+    },
 ]
-

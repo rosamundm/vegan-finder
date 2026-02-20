@@ -298,4 +298,17 @@ export const places = [
         website: "https://www.instagram.com/vegan_aa/",
         address: "Grunewaldstraße 88, 10823 Berlin"
     },
+    {
+        name: "Katzentempel",
+        category: PlaceType.restaurant,
+        district: District.mitte,
+        cuisine: Cuisine.general,
+        fully_vegan: true,
+        open_mondays: true,
+        open_sundays: true,
+        toilet: true,
+        notes: "Came for the cats, stayed for the great vegan food. There are locations all over Germany",
+        website: "https://katzentempel.de/standorte/berlin-mitte/",
+        address: "Friedrichstraße 153, 10117 Berlin"
+    },
 ]
